@@ -13,7 +13,7 @@ public class C05_explicitNarrowing {
 
         in1= 130;
         by1= (byte) in1;
-        System.out.println(by1);
+        System.out.println(by1+"");
 
 
 
