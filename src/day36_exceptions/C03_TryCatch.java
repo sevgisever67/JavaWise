@@ -9,7 +9,7 @@ public class C03_TryCatch {
 
 
         try {
-
+            System.out.println("kod burada başlar");
             System.out.println(sayi1/sayi2);
             System.out.println("deneme1");
             System.out.println("deneme2");
@@ -27,5 +27,7 @@ public class C03_TryCatch {
             catch devreye girmez
             (if - else gibi)
          */
+
+        System.out.println("kod devam eder");
     }
 }

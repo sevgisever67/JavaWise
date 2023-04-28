@@ -11,6 +11,8 @@ public class C02_KullanicininGirdigiDegerleriToplama {
         // kac sayi girildigini ve toplamini yazdirin
         // q veya Q disinda tamsayi olmayan bir deger girilirse
         // hata mesaji verip, yeni deger isteyerek isleme devam edin
+        String str="45";
+        Integer sayı=Integer.parseInt(str);
 
 
         int sayac=0;
@@ -29,21 +31,13 @@ public class C02_KullanicininGirdigiDegerleriToplama {
                 sayac++;
 
             } catch (InputMismatchException e) {
-
-                char input = scan.next().charAt(0);
-
-                if (input=='q' || input == 'Q'){
-                    System.out.println("girilen " + sayac + " adet tamsayinin toplami : " + toplam);
-                    break;
-                }else{
-                    System.out.println("Tamsayi degeri girmelisiniz");
-                }
-
+                e.printStackTrace();
+                break;
             }
 
 
         }while(true);
 
-        System.out.println("Bu is bu kadar");
+        //System.out.println("Bu is bu kadar");
     }
 }
